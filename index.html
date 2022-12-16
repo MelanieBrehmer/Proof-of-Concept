@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Online Banking and Brokerage Deutsche Bank</title>
+    <meta name="theme-color" content="#3b85c1"/>
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        };
+    </script>
+
+
+</head>
+<body>
+
+        <div class="imagetop"><img src="./images/Logo1.png" alt=""></div>
+
+        <div class="warpper">
+            <input class="radio" id="one" name="group" type="radio" checked>
+            <input class="radio" id="two" name="group" type="radio">
+            <input class="radio" id="three" name="group" type="radio">
+        
+        
+            <div class="tabs">
+              <label class="tab" id="one-tab" for="one">Übersicht</label>
+              <label class="tab" id="two-tab" for="two">Überweisung</label>
+              <label class="tab" id="three-tab" for="three">Umsatzanzeige</label>
+        
+            </div>
+        
+            <div class="panels">
+              <div class="panel" id="one-panel">
+
+                <div class="panelonetop">
+                  <div class="panel-title">Ihre Finanzübersicht</div>
+                  <div class="imagetab1"><img src="./images/Logo2.png" alt=""></div>
+                </div>
+                <br>
+
+                <div class="panelonesecond">
+                  <div>
+                    <div class="panelleftside">Neu Im Online Banking</div>
+                    <div class="arrow">
+                      <p>-> Einwilligungen</p>
+                      <p>-> Deutsche Bank VersicherungsManager</p>
+                      <p>-> Banking über Drittanbieter</p>
+                      <p>-> Währungstausch</p>
+                      <p>-> Umsatzanzeige</p>
+                      <p>-> Echtzeit-Überweisung</p>
+                      <p>-> Überweisung</p>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="imageBank"><img src="./images/Bankverbindung.png" alt=""></div>
+                    <br>
+                    <div class="table">
+                      <div class="tableText1">Bankleistungen</div>
+                      <div class="tableText2">Dispositionskredit</div>
+                      <div class="tableText3">Saldo</div>
+                      <div class="tableText4">Währung</div>
+                    </div>
+                    <br>
+                    <div class="table1">
+                      <div class="table1Text1">- Konten und Kreditkarten</div>
+                      <div class="table1Text2">10.888,88</div>
+                      <div class="table1Text3">EUR</div>
+                    </div>
+                    <div class="table2">
+                      <div class="table2Text1">-> 00 persönliches Konto</div>
+                      <div class="table2Text2">0,00</div>
+                      <div class="table2Text3">10.888,88</div>
+                      <div class="table2Text4">EUR</div>
+                    </div>
+                    <br>
+                    <div class="table3">
+                      <div class="table3Text1">Summe Haben</div>
+                      <div class="table3Text2">10.888,88</div>
+                      <div class="table3Text3">EUR</div>
+                    </div>
+                    <div class="table4">
+                      <div class="table4Text1">Summe Soll</div>
+                      <div class="table4Text2">0,00</div>
+                      <div class="table4Text3">EUR</div>
+                    </div>
+                    <div class="table5">
+                      <div class="table5Text1">Gesamtsaldo</div>
+                      <div class="table5Text2">10.888,88</div>
+                      <div class="EUR"></div>
+                    </div>
+                  </div>
+                
+                </div>
+
+                <div class="space1"></div>
+
+                <div class="footer1">
+                  <br>
+                <p>-> Hilfe     -> Seitenübersicht     -> Impressum     -> Rechtliche Hinweise     -> Datenschutz       -> Cookie-Einstellungen</p>
+                  <br>
+                </div>
+
+
+
+
+
+                </div>
+
+              <div class="panel" id="two-panel">
+
+                <div class="panelonetop">
+                  <div class="panel-title">Inlands-Überweisung</div>
+                  <div class="imagetab1"><img src="./images/Logo2.png" alt=""></div>
+                </div>
+                <br>
+                <div class="paneltwosecond">
+                  <div class="arrow">
+                    <p>-> Einwilligungen</p>
+                    <p>-> Deutsche Bank VersicherungsManager</p>
+                    <p>-> Währungstausch</p>
+                    <p>-> Umsatzanzeige</p>
+                    <p>-> Echtzeit-Überweisung</p>
+                    <p>-> Überweisung</p>
+                  </div>
+
+                  <div class="uberweisungsvorlage">
+
+                    <p style="font-size: 18px; color:#274a7a">Auftraggeber</p>
+                    <p style="color:rgb(130, 130, 130)">Name: Max Mustermann</p>
+                    <p style="color:rgb(130, 130, 130)">Konto: 1234567  <button style="width: 85%; background-color:rgb(204, 204, 204)">00- persönliches Konto</button></p>
+                    <p style="color:rgb(130, 130, 130)">IBAN: DE88 8888 8888 8888 00</p>
+                    <p style="color:rgb(130, 130, 130)">Aktueller Kontostand: 10.888,88 EUR (Dispositionskredit 0,00 EUR)</p>
+                    <br>
+                    <p style="font-size: 18px; color:#274a7a">Zahlungsempfänger</p>
+
+                    <form class="first-name">
+                      <div>
+                        <label for="empname" style="color:rgb(130, 130, 130)"> Nachame, Vorname</label>
+                        <input type="text" name="empname" required>
+                      </div>
+
+                      <div>
+                        <label for="iban" style="color:rgb(130, 130, 130)">IBAN</label>
+                        <input type="text" name="iban" required>
+                      </div>
+
+                      <div class="bic">
+                        <p style="color:rgb(130, 130, 130)">BIC</p>
+                      </div>
+                      <div class="Antrag"style="color:rgb(130, 130, 130); font-size: 9px">Automatischer Antrag</div>
+                      <br>
+                      <div class="bic" style="color:rgb(130, 130, 130)">Kreditinstitut</div><br>
+                      <div class="Antrag" style="color:rgb(130, 130, 130); font-size: 9px">Automatischer Eintrag</div><br>
+                      <br>
+
+                      <p style="font-size: 18px; color:#274a7a">Zahlungsdetails</p><br>
+
+                      <div>
+                        <label for="betrag" style="color:rgb(130, 130, 130)">Betrag</label>
+                        <input type="number" step="0.01" name="betrag" required>
+                      </div>
+
+                      <div>
+                        <label for="datum" style="color:rgb(130, 130, 130)">Termin</label>
+                        <input type="date" name="datum" required>
+                      </div>
+
+                      <label for="Verwendungszweck" style="color:rgb(130, 130, 130)">Verwendungszweck</label><br>
+                      <textarea name="Verwendungszweck" id=Verwendungszweck cols="80" rows="4"></textarea><br>
+
+                      <label for="Kundenreferenz" style="color:rgb(130, 130, 130)">Kundenreferenz</label><br>
+                      <textarea name="Kundenreferenz" id=Kundenreferenz cols="80" rows="2"></textarea><br>
+
+
+                      <button type="submit" class="submitbutton" style="background-color: #64ace2; color: rgb(255, 255, 255); margin-left: 88%;">weiter -> </button>
+
+
+                    </form>
+
+
+                  </div>
+
+                </div>
+
+                <div class="space2"></div>
+                <div class="footer2">
+                <br>
+                <p>-> Hilfe     -> Seitenübersicht     -> Impressum     -> Rechtliche Hinweise     -> Datenschutz       -> Cookie-Einstellungen</p>
+                <br>
+                </div>
+
+
+              </div>
+              <div class="panel" id="three-panel">
+
+                <div class="panelonetop">
+                  <div class="panel-title">Umsatzanzeige</div>
+                  <div class="imagetab1"><img src="./images/Logo2.png" alt=""></div>
+                </div>
+
+                <br>
+                <div class="paneltwosecond">
+                  <div class="arrow">
+                    <p style="color:#3998e0">-> Umsatzanzeige</p>
+                    <p>-> MultiBanking Umsätze</p>
+                    <p>-> Echt-zeit Überweisung</p>
+                    <p>-> Inlands-Überweisung</p>
+                    <p>-> Auslands-Überweisung</p>
+                    <p>-> Termin-Überweisung</p>
+                  </div>
+
+                  <div class="umsetze">
+                    <p style="font-size: 18px; color:#274a7a; width: 700px;">Gebuchte Umsätze</p>
+                    <div class="tableU">
+                      <div class="tableUText1">Datum</div>
+                      <div class="tableUText2">Umsatzdeteils</div>
+                      <div class="tableUText3">Soll</div>
+                      <div class="tableUText4">Haben</div>
+                      <div class="tableUText5">Währung</div>
+                    </div>
+                    <br>
+                    <div class="tableU1">
+                      <div class="tableU1Text1"> 
+                        <div id="datum"></div>
+                      </div>
+                      <div class="tableU1Text2">
+                        <div style="margin-right: 155px;"> SEPA Überweisung an IBAN: <div id="iban"></div> <div id="empname"></div></div>
+                      </div>
+                      <div class="tableU1Text3">
+                        <div id="betrag"></div>
+                      </div>
+                      <div class="tableU1Text4">EUR</div>
+                    </div>
+        
+                  </div>
+
+                </div>
+
+                
+              </div>
+            </div>
+          </div>
+
+
+
+
+      <script>
+
+        const form = document.querySelector('form');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault(); 
+            const fd = new FormData(form);
+            const obj = Object.fromEntries(fd);
+
+            const json = JSON.stringify(obj);
+            localStorage.setItem('form', json);
+
+            window.location.href = "index.html"
+        });
+
+        const json = localStorage.getItem('form');
+        const obj = JSON.parse(json);
+
+
+        key = "empname"
+        keyname2 = "Empfängername"
+        let markup = `
+            <div>
+                <span>${keyname2}: ${obj[key]}</span>
+            </div>
+            `;
+        let marks = parseInt(markup); 
+        document.getElementById('empname').innerHTML += markup; 
+        
+        key1 = "iban"
+        keyname = "IBAN"
+        let markup1 = `
+            <div>
+                <span>${keyname}: ${obj[key1]}</span>
+            </div>
+            `;
+        document.getElementById('iban').innerHTML += markup1; 
+
+        key2 = "betrag"
+        let markup2 = `
+            <div>
+                <span>${obj[key2]}</span>
+            </div>
+            `;
+        document.getElementById('betrag').innerHTML += markup2; 
+        
+
+        key3 = "datum"
+        let markup3 = `
+            <div>
+                <span>${obj[key3]}</span>
+            </div>
+            `;
+        document.getElementById('datum').innerHTML += markup3; 
+        
+  
+
+      </script>
+    
+</body>
+</html>
